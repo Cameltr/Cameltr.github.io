@@ -1,0 +1,181 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Taorong Liu</title>
+	<link href="./css/bootstrap.css" rel="stylesheet" type="text/css"  media="all" />
+	<link href="./css/style.css" rel="stylesheet" type="text/css"  media="all" />
+	<link href="./css/prettyPhoto.css" rel="stylesheet" type="text/css"  media="all" />		
+	<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+	<!---start-wrap--->
+	<!---start-header--->
+	<div class="header">
+		<div class="wrap">
+			<!---start-logo--->
+			<div class="logo">
+				<a href="#">Taorong Liu</a>
+			</div>
+			<!---End-logo--->
+			<!---start-top-nav--->
+			<div class="top-nav">
+				<ul>
+					<li id="Me" class="active" onclick="func('Me')"><a href="#me" class="scroll">Me</a></li>
+					<li id="Experience" onclick="func('Experience')"><a href="#experience" class="scroll">Experience</a></li>
+					<li id="Publications" onclick="func('Publications')"><a href="#publications" class="scroll">Publications</a></li>
+					<li id="Honor" onclick="func('Honor')"><a href="#honor" class="scroll">Honors</a></li>
+					<!-- <li id="Art" onclick="func('Art')"><a href="#art" class="scroll">Art Gallery</a></li>					 -->
+					<li id="Contact" onclick="func('Contact')"><a href="#contact" class="scroll">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			<!---End-top-nav--->
+		</div>
+	</div>
+	
+	<script> 
+		var lastname = 'Me';
+		function func(name){
+			var div = document.getElementById(name); 
+			div.className = 'active'; 
+			div = document.getElementById(lastname); 
+			div.className = ''; 
+			lastname = name;
+		}
+		function coming_soon()
+		{
+			alert("Coming soon.");
+		}
+	</script> 
+	
+	<!---End-wrap--->
+	<div class="content">
+		<div class="grid1" id="me">
+			<img id="me" src="./images/me.jpg" title="name" width="150pt" height="200pt" /></a>
+			<h3>Hi, I'm Taorong Liu (刘涛榕)</h3>
+			<br/>
+			<p> This is my personal website. I'm currently an undergraduate student at Wuhan University (WHU), China. 
+                I'm a member of <a href="http://aim-nercms.whu.edu.cn/"> AIMLab</a>, advised by Asso.Prof. Jing Xiao and
+                <a href="https://wangzwhu.github.io/home/"> Prof. Zheng Wang</a>. My interest mainly lies in image inpainting and privacy protection.
+			</p>
+		</div>
+
+		<div class="grid3" id="experience">
+			<div class="grid3-header">
+				<h3>Experience</h3>
+				<br/>
+			</div>
+			<div class="grid3-content">
+				<div class="grid3-content">
+					<ul class="graid3-ul" style="font-size: 1.1em;">						
+						<li class="graid3-li"> Master’s Degree in Artificial Intelligence (09/2023 - )<br/>
+							School of Computer Science, Wuhan University<br/>
+							(Postgraduate Recommendation)
+						</li>
+						<li class="graid3-li">
+							Bachelor’s Degree in Computer Science (09/2019 - present)<br/>
+							School of Computer Science, Wuhan University
+						</li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+		
+		<div class="grid3" id="publications" style="background:#ffffff">
+			<div class="grid3-header">
+				<h3>Publication</h3>
+				<br/>
+			</div>
+			<div class="grid3-content">
+				<!-- <p>View more of my publications <a class="btn btn-confirm" href="project.html">here</a></p> -->
+				<div class='row publication-entity'>
+					<div class='col-xs-3'>
+						<img class="paper-image" src="images/publication/ICIP2022.png">
+					</div>
+					<div class='col-xs-9'>
+						<div class='paper-title'>Reference-Guided Texture And Structure Inference for Image Inpainting</div>
+						<div class='paper-authors'><b>Taorong Liu</b>, Liang Liao, Zheng Wang, Shin’ichi Satoh</div>
+						<div class='paper-venue'>ICIP 2022</div>
+						<div class='paper-link'>
+							<a class="btn btn-confirm" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9897592">pdf</a>
+							<!-- <a class="btn btn-confirm" target="_blank" href="https://www.mmlab-ntu.com/project/vtoonify/">project</a> -->
+							<a class="btn btn-confirm" target="_blank" href="https://github.com/Cameltr/RGTSI">code</a>
+							<a class="btn btn-confirm" target="_blank" href="https://github.com/Cameltr/RGTSI">dataset</a>
+						</div>
+					</div>
+				</div>	
+				<div class='row publication-entity'>
+					<div class='col-xs-3'>
+						<img class="paper-image" src="images/publication/TIP2023.jpg">
+					</div>
+					<div class='col-xs-9'>
+						<div class='paper-title'>TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting</div>
+						<div class='paper-venue'>Submitted to TIP</div>
+						<div class='paper-link'>
+							<a class="btn btn-confirm" target="_blank" >pdf</a>
+							<!-- <a class="btn btn-confirm" target="_blank" href="https://yumingj.github.io/projects/Text2Human.html">project</a> -->
+							<a class="btn btn-confirm" target="_blank" href="https://github.com/Cameltr/TransRef">code</a>
+							<a class="btn btn-confirm" target="_blank" href="https://github.com/Cameltr/TransRef">dataset</a>
+						</div>
+					</div>
+				</div>
+					
+			</div>			
+		</div>
+		<div class="grid3" id="honor" >	
+			<div class="grid3-header" id="publications">
+				<h3>Awards and Honors</h3>
+				<br/>
+			</div>	
+			<div class="grid3-content">
+				<ul class="graid3-ul"  style="font-size: 1.1em;">
+
+					<li class="graid3-li"> Yu Gang Song Xiao Scholarship (于刚宋晓奖学金), Wuhan University, 2022.
+					</li>				
+					<li class="graid3-li"> Merit Student (三好学生), Wuhan University, 2022.
+					</li>					
+					<li class="graid3-li">Outstanding Student Leader (优秀学生干部), Wuhan University, 2021.
+					</li>
+					<li class="graid3-li"> Merit Student (三好学生), Wuhan University, 2021.
+					</li>	
+					<li class="graid3-li"> Merit Student (三好学生), Wuhan University, 2020.
+					</li>									 									
+				</ul>
+			</div>
+		</div>		
+		
+		<div class="grid2" id="contact" style="background:#ffffff" >
+			<h3>Contact</h3>	
+			<div class="grid2-content">
+				<p>Email: cameltr@whu.edu.cn</p>			
+			</div>			
+		</div>
+		<div class="footer">
+			<p>Taorong Liu. Powered by <a href="http://w3layouts.com/">w3layouts</a>, <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">prettyPhoto</a>, <a href="http://getbootstrap.com/2.3.2/">bootstrap</a>, <a href="http://isotope.metafizzy.co/">Isotope</a></p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.banner.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>		
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>	
+	<script type="text/javascript" src="js/main.js"></script>	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+			});
+		});	
+	</script>			
+</body>
+</html>
+
